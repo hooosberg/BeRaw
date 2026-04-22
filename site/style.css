@@ -1,3 +1,66 @@
+.more-works {
+  text-align: center;
+  padding: 72px 20px 32px;
+  border-top: 1px solid var(--line);
+  margin-top: 48px;
+}
+
+.more-works-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+
+.more-works-sub {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0 0 36px;
+}
+
+.more-works-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.more-works-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 96px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.2s;
+}
+
+.more-works-card:hover {
+  transform: translateY(-3px);
+}
+
+.more-works-card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.more-works-card[href*="uixskills"] img,
+.more-works-card[href*="agentlimb"] img {
+  padding: 4px;
+}
+
+.more-works-card span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
 :root {
   --bg: #ffffff;
   --bg-soft: #f6f5f1;
