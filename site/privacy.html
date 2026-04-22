@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy — BeRaw</title>
+    <meta name="description" content="BeRaw Privacy Policy. No telemetry, no accounts, no third-party servers.">
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="top">
+      <div class="container top__inner">
+        <a class="top__brand" href="./">
+          <img class="top__logo" src="./assets/icon-48.png" alt="BeRaw logo">
+          <div>
+            <span class="top__name">BeRaw</span>
+            <span class="top__tag">for Behance</span>
+          </div>
+        </a>
+        <nav class="top__nav">
+          <a href="./" data-i18n="legal.back">← Back to home</a>
+          <div class="lang-switcher">
+            <button class="lang-switcher__button" type="button" id="langSwitcherButton" aria-haspopup="true" aria-expanded="false">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.08 16zm2.95-8H5.08a7.99 7.99 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+              <span id="langSwitcherLabel">English</span>
+              <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <ul class="lang-switcher__menu" id="langSwitcherMenu" role="menu" hidden></ul>
+          </div>
+          <a class="top__github" href="https://github.com/hooosberg/BeRaw" target="_blank" rel="noreferrer noopener">GitHub ↗</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal">
+      <div class="container legal__container">
+        <h1>Privacy Policy</h1>
+        <p class="legal__meta">Last updated: 2026-04-22</p>
+        <p class="legal__disclaimer" data-i18n="legal.canonical">Only the English text on this page is legally binding. Translations elsewhere on the site are provided for convenience only.</p>
+
+        <section>
+          <h2>Overview</h2>
+          <p>BeRaw is a Chrome extension that scans the currently open Behance page in your browser, lets you pick images, and downloads them — either individually or as a single ZIP. Everything happens inside your browser on your local machine. BeRaw has no backend server, no accounts, no login, and no analytics.</p>
+        </section>
+
+        <section>
+          <h2>What BeRaw does <em>not</em> do</h2>
+          <ul class="legal__list-strong">
+            <li><b>No telemetry.</b> BeRaw never reports usage, errors, clicks, or any activity to us or any third party.</li>
+            <li><b>No accounts or login.</b> BeRaw does not ask for your name, email, or any identity.</li>
+            <li><b>No third-party servers of ours.</b> BeRaw operates against servers you already connect to (Behance's CDN, GitHub when you click "Check for updates"). It does not send your data anywhere else.</li>
+            <li><b>No sale or sharing of your data.</b> We have no data to sell, because we never collect any.</li>
+            <li><b>No unrelated data use.</b> The permissions granted to BeRaw are used only for the functions described here.</li>
+            <li><b>No creditworthiness, advertising, or profiling.</b> None of your activity is used for any such determination.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>What BeRaw reads — and where it goes</h2>
+          <table class="legal__table">
+            <thead>
+              <tr><th>Read</th><th>Purpose</th><th>Where it goes</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The DOM of the currently active Behance tab — specifically the <code>&lt;img&gt;</code> elements and their attributes (<code>src</code>, <code>srcset</code>, <code>alt</code>, size).</td>
+                <td>To find the large images on the page and outline them for selection.</td>
+                <td>Stays inside the tab and the extension's side panel. Never leaves your machine.</td>
+              </tr>
+              <tr>
+                <td>The active tab's URL and title.</td>
+                <td>To verify the tab is a Behance page and to name downloaded archives. The title is also used as a folder name inside the ZIP.</td>
+                <td>Stays inside the extension process. Never transmitted off-device.</td>
+              </tr>
+              <tr>
+                <td>The image bytes you choose to download.</td>
+                <td>To transcode (when you pick a format like JPG/PNG) and package into a ZIP.</td>
+                <td>Fetched by your browser directly from Behance's CDN, processed in memory, and written to your Downloads folder as a ZIP or single file. BeRaw does not upload these bytes anywhere.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>What BeRaw stores locally</h2>
+          <table class="legal__table">
+            <thead>
+              <tr><th>Stored</th><th>Where</th><th>Why</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Your chosen UI language (e.g. <code>en</code>, <code>zh-CN</code>).</td>
+                <td><code>chrome.storage.local</code> under key <code>beraw.locale</code>.</td>
+                <td>So the extension remembers your language across sessions.</td>
+              </tr>
+              <tr>
+                <td>The current selection state and output format.</td>
+                <td>In-memory only, for the lifetime of the side panel.</td>
+                <td>Lost when you close the side panel or the browser.</td>
+              </tr>
+              <tr>
+                <td>Downloaded files you chose to save.</td>
+                <td>Your OS Downloads folder (via Chrome's <code>chrome.downloads</code> API).</td>
+                <td>These are your files; BeRaw writes them once and never reads them back.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>External network requests BeRaw makes</h2>
+          <ul>
+            <li><b>Behance CDN</b> (<code>*.behance.net</code>, <code>mir-s3-cdn-cf.behance.net</code>): to fetch image bytes for ZIP packaging and format conversion. These requests are the same as loading the image in your browser.</li>
+            <li><b>GitHub Releases API</b> (<code>api.github.com/repos/hooosberg/BeRaw/releases/latest</code>): only when you explicitly click <b>Settings → About → Check for updates</b>. BeRaw sends no body, no cookies, no identifying headers; the response is the public release metadata. BeRaw does not poll automatically.</li>
+          </ul>
+          <p class="legal__muted">That's the entire list. BeRaw does not contact any other server.</p>
+        </section>
+
+        <section>
+          <h2>Remote code disclosure</h2>
+          <p>BeRaw does <b>not</b> fetch or execute remote JavaScript or WebAssembly at runtime. All code that runs in the extension is shipped in the published release and reviewable in the <a href="https://github.com/hooosberg/BeRaw" target="_blank" rel="noreferrer noopener">repository</a>.</p>
+        </section>
+
+        <section>
+          <h2>Permissions</h2>
+          <table class="legal__table">
+            <thead>
+              <tr><th>Permission</th><th>Why BeRaw needs it</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>activeTab</code>, <code>tabs</code></td><td>Read the URL/title of the current tab to detect Behance pages and drive the side panel.</td></tr>
+              <tr><td><code>downloads</code></td><td>Save the ZIP archive and individual files to your Downloads folder.</td></tr>
+              <tr><td><code>sidePanel</code></td><td>Open the BeRaw UI in Chrome's side panel next to the page.</td></tr>
+              <tr><td><code>storage</code></td><td>Remember your language preference across browser sessions.</td></tr>
+              <tr><td><code>host_permissions: https://*/*</code></td><td>Re-fetch image bytes from the exact CDN URLs Behance references (Behance's CDN hostnames vary). BeRaw only actually runs against <code>behance.net</code> pages.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Compliance disclosures</h2>
+          <ul>
+            <li>BeRaw's use of Chrome APIs follows the <a href="https://developer.chrome.com/docs/webstore/program-policies/" target="_blank" rel="noreferrer noopener">Chrome Web Store Developer Program Policies</a>.</li>
+            <li>BeRaw does not use user data for unrelated purposes.</li>
+            <li>BeRaw does not determine creditworthiness or lending eligibility.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Changes</h2>
+          <p>Updates to this policy will be posted on this page and announced in the <a href="https://github.com/hooosberg/BeRaw/releases" target="_blank" rel="noreferrer noopener">GitHub release notes</a>.</p>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <ul>
+            <li>Email: <a href="mailto:zikedece@proton.me">zikedece@proton.me</a></li>
+            <li>GitHub: <a href="https://github.com/hooosberg/BeRaw/issues" target="_blank" rel="noreferrer noopener">hooosberg/BeRaw/issues</a></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="foot">
+      <div class="container foot__legal foot__legal--simple">
+        <span>© <span id="year">2026</span> hooosberg · BeRaw is licensed under the <a href="./license.html">BSL 1.1</a>.</span>
+        <span class="foot__legal-links">
+          <a href="./license.html" data-i18n="footer.legalLicense">License</a>
+          <a href="./terms.html" data-i18n="footer.legalTerms">Terms of Service</a>
+          <a href="./privacy.html" data-i18n="footer.legalPrivacy">Privacy Policy</a>
+        </span>
+      </div>
+    </footer>
+
+    <script defer src="./i18n.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

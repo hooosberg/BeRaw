@@ -1,0 +1,12 @@
+# Built release zips — staged here before uploading to GitHub Releases.
+# The folder exists locally and is populated by `github/pack-release.sh`,
+# but nothing inside it is committed.
+/releases/
+
+# macOS
+.DS_Store
+
+# Editor droppings
+*.swp
+.idea/
+.vscode/

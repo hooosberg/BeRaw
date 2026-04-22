@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BeRaw — Behance raw-image grabber</title>
+    <meta name="description" content="BeRaw is a Chrome extension that pulls full-size raw images out of any Behance project. One-click per image, or batch everything into a ZIP. Twelve languages.">
+    <meta property="og:title" content="BeRaw — Behance raw-image grabber">
+    <meta property="og:description" content="Pull full-size raw images out of any Behance project. One click or batch ZIP.">
+    <meta property="og:image" content="./assets/promo.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="top">
+      <div class="container top__inner">
+        <a class="top__brand" href="./">
+          <img class="top__logo" src="./assets/icon-48.png" alt="BeRaw logo">
+          <div>
+            <span class="top__name">BeRaw</span>
+            <span class="top__tag" data-i18n="top.tag">for Behance</span>
+          </div>
+        </a>
+        <nav class="top__nav">
+          <a href="#features" data-i18n="nav.features">Features</a>
+          <a href="#how" data-i18n="nav.howItWorks">How it works</a>
+          <a href="#compare" data-i18n="nav.compare">Compare</a>
+          <a href="#install" data-i18n="nav.install">Install</a>
+          <div class="lang-switcher">
+            <button class="lang-switcher__button" type="button" id="langSwitcherButton" aria-haspopup="true" aria-expanded="false">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.08 16zm2.95-8H5.08a7.99 7.99 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+              <span id="langSwitcherLabel">English</span>
+              <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <ul class="lang-switcher__menu" id="langSwitcherMenu" role="menu" hidden></ul>
+          </div>
+          <a class="top__github" href="https://github.com/hooosberg/BeRaw" target="_blank" rel="noreferrer noopener">GitHub ↗</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <span class="hero__eyebrow" data-i18n="hero.eyebrow">Chrome extension · v 0.1.8</span>
+            <h1>
+              <span data-i18n="hero.h1a">Pull raw images off Behance.</span><br>
+              <span class="hero__accent" data-i18n="hero.h1b">No compression. No hassle.</span>
+            </h1>
+            <p class="hero__lede" data-i18n="hero.lede">BeRaw scans any Behance project, outlines every large image, and lets you grab them — one by one, or the whole set as a ZIP.</p>
+            <div class="hero__ctas">
+              <a class="btn btn--primary" href="https://github.com/hooosberg/BeRaw/releases/latest" target="_blank" rel="noreferrer noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M5 19h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span data-i18n="hero.ctaDownload">Download latest release</span>
+              </a>
+              <a class="btn btn--ghost" href="https://github.com/hooosberg/BeRaw" target="_blank" rel="noreferrer noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.72.08-.72 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3z"/></svg>
+                <span data-i18n="hero.ctaStar">Star on GitHub</span>
+              </a>
+            </div>
+            <p class="hero__footnote" data-i18n-html="hero.footnote">Free for personal use · BSL 1.1 · Works with <code>behance.net/*</code> · Chrome Web Store coming soon</p>
+          </div>
+          <div class="hero__visual">
+            <div class="mock">
+              <div class="mock__head">
+                <span class="mock__dot"></span>
+                <span class="mock__dot"></span>
+                <span class="mock__dot"></span>
+                <span class="mock__url">behance.net/gallery/…</span>
+              </div>
+              <div class="mock__body">
+                <div class="mock__tile mock__tile--a"></div>
+                <div class="mock__tile mock__tile--b"></div>
+                <div class="mock__tile mock__tile--c"></div>
+                <div class="mock__tile mock__tile--d"></div>
+              </div>
+              <div class="mock__panel">
+                <img src="./assets/icon-48.png" alt="" class="mock__panel-logo">
+                <div class="mock__panel-body">
+                  <div class="mock__panel-title">BeRaw</div>
+                  <div class="mock__panel-meta" data-i18n="mock.panelMeta">27 images found · 12 in basket</div>
+                  <div class="mock__panel-btn" data-i18n="mock.panelBtn">Download selected (ZIP)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <h2 class="section__title" data-i18n="why.title">Why BeRaw</h2>
+          <p class="section__lede" data-i18n="why.lede">Most Behance downloaders grab preview-sized images or make you click-save one at a time. BeRaw doesn't.</p>
+          <div class="cards">
+            <article class="card">
+              <div class="card__icon">🔎</div>
+              <h3 data-i18n="why.card1Title">Finds the raw file</h3>
+              <p data-i18n-html="why.card1Body">BeRaw rewrites Behance CDN paths to the <code>/source/</code> variant — the full-resolution file designers actually uploaded, not the downsized preview you see in the feed.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon">🧺</div>
+              <h3 data-i18n="why.card2Title">Basket + bulk ZIP</h3>
+              <p data-i18n="why.card2Body">Tick the images you want — in the side panel or directly on each image — then grab them all as one ZIP. No per-file "save as" prompts on Windows.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon">🎨</div>
+              <h3 data-i18n="why.card3Title">Format you can use</h3>
+              <p data-i18n="why.card3Body">Keep the original bytes, or force JPG/PNG. WebP is transcoded to JPG at maximum quality because half your tools still don't open WebP.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon">🌐</div>
+              <h3 data-i18n="why.card4Title">Twelve languages</h3>
+              <p data-i18n="why.card4Body">简体/繁體中文, English, 日本語, 한국어, Français, Deutsch, Español, Português, Русский, Italiano, Tiếng Việt. Auto-detects your browser; switch anytime in Settings.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="how">
+        <div class="container">
+          <h2 class="section__title" data-i18n="how.title">How it works</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step__num">1</div>
+              <h3 data-i18n="how.step1Title">Open a Behance project</h3>
+              <p data-i18n-html="how.step1Body">BeRaw runs only on <code>behance.net</code>. It looks for large <code>&lt;img&gt;</code> tags (ignores avatars, badges, icons) and outlines them in blue.</p>
+            </div>
+            <div class="step">
+              <div class="step__num">2</div>
+              <h3 data-i18n="how.step2Title">Select what you want</h3>
+              <p data-i18n-html="how.step2Body">Click <b>Select</b> on any image, or <b>Select all</b> in the side panel. A red outline means it's in the basket.</p>
+            </div>
+            <div class="step">
+              <div class="step__num">3</div>
+              <h3 data-i18n="how.step3Title">Pick a format</h3>
+              <p data-i18n="how.step3Body">Original keeps Behance's bytes. Auto converts only WebP. JPG/PNG forces everything into one format.</p>
+            </div>
+            <div class="step">
+              <div class="step__num">4</div>
+              <h3 data-i18n="how.step4Title">Download</h3>
+              <p data-i18n-html="how.step4Body">Hit <b>Download selected (ZIP)</b> for the whole basket, or <b>Download image</b> on any image overlay for just that one.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="compare">
+        <div class="container">
+          <h2 class="section__title" data-i18n="compare.title">How BeRaw compares</h2>
+          <p class="section__lede" data-i18n="compare.lede">We respect every other Behance tool. This is just what makes BeRaw different.</p>
+          <div class="table">
+            <div class="table__row table__row--head">
+              <div data-i18n="compare.headFeature">Feature</div>
+              <div>BeRaw</div>
+              <div data-i18n="compare.headOther">Typical Behance downloader</div>
+            </div>
+            <div class="table__row">
+              <div data-i18n-html="compare.r1Feat">Rewrites URLs to the <code>/source/</code> (full-size) variant</div>
+              <div class="ok">✓</div>
+              <div class="no" data-i18n="compare.r1Other">often preview size</div>
+            </div>
+            <div class="table__row">
+              <div data-i18n="compare.r2Feat">One ZIP instead of N "save as" dialogs</div>
+              <div class="ok">✓</div>
+              <div class="no" data-i18n="compare.r2Other">sometimes</div>
+            </div>
+            <div class="table__row">
+              <div data-i18n="compare.r3Feat">Per-image download button on the page itself</div>
+              <div class="ok">✓</div>
+              <div class="no">✗</div>
+            </div>
+            <div class="table__row">
+              <div data-i18n="compare.r4Feat">WebP → JPG/PNG transcoding at max quality</div>
+              <div class="ok">✓</div>
+              <div class="no" data-i18n="compare.r4Other">raw WebP only</div>
+            </div>
+            <div class="table__row">
+              <div data-i18n="compare.r5Feat">Side panel UI (doesn't steal the popup)</div>
+              <div class="ok">✓</div>
+              <div class="no" data-i18n="compare.r5Other">popup only</div>
+            </div>
+            <div class="table__row">
+              <div data-i18n="compare.r6Feat">Twelve UI languages out of the box</div>
+              <div class="ok">✓</div>
+              <div class="no">1–2</div>
+            </div>
+            <div class="table__row">
+              <div data-i18n="compare.r7Feat">Source available (BSL 1.1)</div>
+              <div class="ok">✓</div>
+              <div class="no" data-i18n="compare.r7Other">mostly closed</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="install">
+        <div class="container">
+          <h2 class="section__title" data-i18n="install.title">Install</h2>
+          <div class="install">
+            <div class="install__card install__card--featured">
+              <div class="install__badge" data-i18n="install.badge">Recommended</div>
+              <h3 data-i18n="install.card1Title">From GitHub Releases</h3>
+              <p data-i18n-html="install.card1Body">Grab the packaged extension from the Releases page, unzip it, and load it as an unpacked extension. The built-in updater (Settings → About → <b>Check for updates</b>) pings the same Releases API, so you'll know when a new version ships.</p>
+              <ol>
+                <li data-i18n-html="install.card1Step1">Download the latest <code>.zip</code> from Releases</li>
+                <li data-i18n="install.card1Step2">Unzip somewhere stable (do not delete the folder after install)</li>
+                <li data-i18n-html="install.card1Step3">Open <code>chrome://extensions</code> and toggle <b>Developer mode</b></li>
+                <li data-i18n-html="install.card1Step4">Click <b>Load unpacked</b> and pick the unzipped folder</li>
+              </ol>
+              <a class="btn btn--primary" href="https://github.com/hooosberg/BeRaw/releases/latest" target="_blank" rel="noreferrer noopener" data-i18n="install.card1Cta">Download latest release ↗</a>
+              <p class="install__note" data-i18n="install.card1Note">Chrome Web Store listing is in review — once approved, updates will flow automatically.</p>
+            </div>
+            <div class="install__card">
+              <h3 data-i18n="install.card2Title">From source</h3>
+              <p data-i18n="install.card2Body">For contributors and people who want to tweak translations or the scan logic.</p>
+              <ol>
+                <li data-i18n-html="install.card2Step1">Clone <code>github.com/hooosberg/BeRaw</code></li>
+                <li data-i18n="install.card2Step2">Open chrome://extensions and toggle Developer mode</li>
+                <li data-i18n-html="install.card2Step3">Click <b>Load unpacked</b> and pick the <code>local/</code> folder</li>
+                <li data-i18n="install.card2Step4">Open any Behance project</li>
+              </ol>
+              <a class="btn btn--ghost" href="https://github.com/hooosberg/BeRaw" target="_blank" rel="noreferrer noopener" data-i18n="install.card2Cta">Open on GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <h2 class="section__title" data-i18n="faq.title">Quick answers</h2>
+          <div class="faq">
+            <details>
+              <summary data-i18n="faq.q1">Does BeRaw bypass paywalls or private projects?</summary>
+              <p data-i18n="faq.a1">No. BeRaw only sees what your browser already loads. Private or drafted projects, or content behind a login you don't have — BeRaw can't get those either.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q2">Why "Original" instead of just "best quality"?</summary>
+              <p data-i18n-html="faq.a2">"Original" means no re-encoding. BeRaw rewrites Behance's preview URL (like <code>/disp/…</code>) to the <code>/source/…</code> variant and saves the bytes as-is. That's the uncompressed file the designer actually uploaded.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q3">Can I use BeRaw for client work / portfolios?</summary>
+              <p data-i18n="faq.a3">Downloaded work still belongs to its creator. BeRaw is meant for mood boards, design research, and personal reference. Don't redistribute someone else's work, and credit creators when you use their designs as inspiration.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q4">Will it work on Dribbble / Pinterest / other sites?</summary>
+              <p data-i18n-html="faq.a4">Not today. BeRaw is scoped to <code>behance.net/*</code> by design — the URL-rewriting logic is Behance-specific. A sibling extension for Dribbble is on the roadmap.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q5">How do I add a new language?</summary>
+              <p data-i18n-html="faq.a5">Open <code>local/locales.js</code>, copy the <code>en</code> block, translate the strings. Open a PR — we'll ship it.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.q6">Is BeRaw free for my team at work?</summary>
+              <p data-i18n-html="faq.a6">Personal use is always free. Use by a company, team, or any organization needs a commercial license — email <a href="mailto:zikedece@proton.me">zikedece@proton.me</a>. On 2030-04-22 the license auto-converts to Apache 2.0 and the commercial restriction lifts.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="container foot__inner">
+        <div class="foot__brand">
+          <img src="./assets/icon-48.png" alt="" width="40" height="40">
+          <div>
+            <div class="foot__name">BeRaw</div>
+            <div class="foot__tag" data-i18n="footer.tag">Behance raw-image grabber</div>
+          </div>
+        </div>
+
+        <div class="foot__cols">
+          <div class="foot__col">
+            <h4 data-i18n="footer.colProduct">BeRaw</h4>
+            <a href="https://github.com/hooosberg/BeRaw" target="_blank" rel="noreferrer noopener" data-i18n="footer.linkRepo">GitHub repo</a>
+            <a href="https://github.com/hooosberg/BeRaw/releases/latest" target="_blank" rel="noreferrer noopener" data-i18n="footer.linkRelease">Download latest release</a>
+            <a href="https://github.com/hooosberg/BeRaw/releases" target="_blank" rel="noreferrer noopener" data-i18n="footer.linkChangelog">All releases / changelog</a>
+            <a href="https://github.com/hooosberg/BeRaw/issues" target="_blank" rel="noreferrer noopener" data-i18n="footer.linkIssue">Report an issue</a>
+            <a href="mailto:zikedece@proton.me" data-i18n="footer.linkContact">Contact: zikedece@proton.me</a>
+          </div>
+          <div class="foot__col">
+            <h4 data-i18n-html="footer.colBuilt">Built by <a href="https://github.com/hooosberg" target="_blank" rel="noreferrer noopener">hooosberg</a></h4>
+            <a href="https://github.com/hooosberg/AgentLimb" target="_blank" rel="noreferrer noopener" data-i18n="footer.proj1">AgentLimb — teach AI to control your browser</a>
+            <a href="https://github.com/hooosberg/WitNote" target="_blank" rel="noreferrer noopener" data-i18n="footer.proj2">WitNote — local-first AI writing companion</a>
+            <a href="https://github.com/hooosberg/GlotShot" target="_blank" rel="noreferrer noopener" data-i18n="footer.proj3">GlotShot — perfect App Store preview images</a>
+            <a href="https://github.com/hooosberg/TrekReel" target="_blank" rel="noreferrer noopener" data-i18n="footer.proj4">TrekReel — outdoor trails, cinematic reels</a>
+            <a href="https://github.com/hooosberg/DOMPrompter" target="_blank" rel="noreferrer noopener" data-i18n="footer.proj5">DOMPrompter — visualize DOM for AI code</a>
+            <a href="https://github.com/hooosberg/UIXskills" target="_blank" rel="noreferrer noopener" data-i18n="footer.proj6">UIXskills — AI → JSON → Whiteboard → UI</a>
+          </div>
+        </div>
+
+        <div class="foot__friends">
+          <h4 data-i18n="footer.colFriends">Friends</h4>
+          <a class="foot__friend" href="https://artbuer.com" target="_blank" rel="noreferrer noopener">
+            <span class="foot__friend-name" data-i18n="footer.friend1Name">不二手造</span>
+            <span class="foot__friend-sub" data-i18n="footer.friend1Desc">Independent original design studio · artbuer.com</span>
+          </a>
+        </div>
+      </div>
+      <div class="container foot__legal">
+        <span>© <span id="year">2026</span> hooosberg · <span data-i18n-html="footer.legalCopy">BeRaw is licensed under the <a href="./license.html">BSL 1.1</a> (free for personal use; <a href="mailto:zikedece@proton.me">commercial license</a> required for organizations).</span></span>
+        <span class="foot__legal-links">
+          <a href="./license.html" data-i18n="footer.legalLicense">License (BSL 1.1)</a>
+          <a href="./terms.html" data-i18n="footer.legalTerms">Terms of Service</a>
+          <a href="./privacy.html" data-i18n="footer.legalPrivacy">Privacy Policy</a>
+        </span>
+      </div>
+      <div class="container foot__legal">
+        <span data-i18n="footer.legalTrademark">Not affiliated with Adobe or Behance. All trademarks belong to their owners.</span>
+      </div>
+    </footer>
+
+    <script defer src="./i18n.js"></script>
+  </body>
+</html>
