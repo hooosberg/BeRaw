@@ -6,6 +6,12 @@
 
 **Behance raw-image grabber — pull full-size images out of any Behance project, single or batched ZIP.**
 
+[![GitHub release](https://img.shields.io/github/v/release/hooosberg/BeRaw?color=1a73e8&label=release)](https://github.com/hooosberg/BeRaw/releases/latest)
+[![License: BUSL-1.1](https://img.shields.io/badge/license-BUSL--1.1-blue.svg)](LICENSE)
+[![Manifest V3](https://img.shields.io/badge/manifest-v3-34a853.svg)](local/manifest.json)
+[![Languages](https://img.shields.io/badge/i18n-12%20languages-orange.svg)](#)
+[![GitHub stars](https://img.shields.io/github/stars/hooosberg/BeRaw?style=social)](https://github.com/hooosberg/BeRaw/stargazers)
+
 [Website](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/) · [Report an issue](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
@@ -140,6 +146,18 @@ Also: [Terms of Service](https://hooosberg.github.io/BeRaw/terms.html) · [Priva
 ## Respect for creators
 
 BeRaw only downloads publicly accessible Behance images. Works on Behance are the property of their creators — please use BeRaw for personal reference, mood boards, and design research, and follow [Behance's Terms of Use](https://www.behance.net/misc/terms). If you use a creator's work, credit them.
+
+## Sibling projects
+
+Built by [hooosberg](https://github.com/hooosberg):
+
+- [AgentLimb](https://agentlimb.com) — teach AI to control your browser
+- [Packpour](https://hooosberg.github.io/Packpour/) — App Store Connect locale filler
+- [WitNote](https://hooosberg.github.io/WitNote/) — local-first AI writing companion
+- [GlotShot](https://hooosberg.github.io/GlotShot/) — perfect App Store preview images
+- [TrekReel](https://hooosberg.github.io/TrekReel/) — outdoor trails, cinematic reels
+- [DOMPrompter](https://hooosberg.github.io/DOMPrompter/) — visualize DOM for AI code
+- [UIXskills](https://uixskills.com) — AI → JSON → Whiteboard → UI
 
 ## Friends
 
