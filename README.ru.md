@@ -6,7 +6,7 @@
 
 **Захватчик оригиналов Behance — вытаскивай исходники в полном размере из любого проекта Behance, по одному или пакетным ZIP.**
 
-[Сайт](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/) · [Сообщить о проблеме](https://github.com/hooosberg/BeRaw/issues)
+[Сайт](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [Сообщить о проблеме](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -46,7 +46,7 @@ git clone https://github.com/hooosberg/BeRaw.git
 
 ### Из Chrome Web Store
 
-*На модерации.*
+[Установить из Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en).
 
 ## Использование
 

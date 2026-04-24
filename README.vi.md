@@ -6,7 +6,7 @@
 
 **Trình lấy ảnh gốc Behance — kéo file nguyên bản, đầy đủ kích thước từ mọi dự án Behance, từng tấm hoặc gộp trong ZIP.**
 
-[Trang web](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/) · [Báo lỗi](https://github.com/hooosberg/BeRaw/issues)
+[Trang web](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [Báo lỗi](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -46,7 +46,7 @@ git clone https://github.com/hooosberg/BeRaw.git
 
 ### Từ Chrome Web Store
 
-*Đang xét duyệt.*
+[Cài từ Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en).
 
 ## Cách dùng
 

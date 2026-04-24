@@ -6,7 +6,7 @@
 
 **Behance Roh-Bild-Grabber — zieh Originalbilder in voller Größe aus jedem Behance-Projekt, einzeln oder als ZIP.**
 
-[Website](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/) · [Fehler melden](https://github.com/hooosberg/BeRaw/issues)
+[Website](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [Fehler melden](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -46,7 +46,7 @@ In `chrome://extensions/` den Entwicklermodus aktivieren, **Entpackte Erweiterun
 
 ### Aus dem Chrome Web Store
 
-*In Prüfung.*
+[Aus dem Chrome Web Store installieren](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en).
 
 ## Benutzung
 

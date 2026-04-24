@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/hooosberg/BeRaw/releases/latest">
-    <img src="https://img.shields.io/badge/Download-Latest_Release-1a73e8?style=for-the-badge&logo=github&logoColor=white" alt="Download latest release">
+  <a href="https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en">
+    <img src="https://img.shields.io/badge/Install-Chrome_Web_Store-1a73e8?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Install from Chrome Web Store">
   </a>
   <a href="https://hooosberg.github.io/BeRaw/">
     <img src="https://img.shields.io/badge/Website-hooosberg.github.io/BeRaw-F5A623?style=for-the-badge" alt="Website">
@@ -97,9 +97,9 @@ BeRaw runs entirely in your browser. No analytics, no account, no third-party se
 
 UI strings ship in English, Simplified Chinese, Traditional Chinese, Japanese, Korean, French, German, Spanish, Portuguese, Russian, Italian, and Vietnamese. Auto-picks your Chrome language; the side panel lets you switch manually.
 
-### 6. Built-in Updater
+### 6. Store Install + Manual Builds
 
-Settings → About → **Check for updates** pings the GitHub Releases API and surfaces the latest version with a one-click download link. No Chrome Web Store dependency.
+Install from the Chrome Web Store for the simplest setup and automatic updates. Developers can still load unpacked builds from GitHub Releases; Settings → About → **Check for updates** pings the Releases API for those manual installs.
 
 ## How It Works
 
@@ -119,7 +119,7 @@ No remote server in the loop. BeRaw never sees what you downloaded — neither d
 
 ## Quick Start
 
-1. **Install** — Download the latest `.zip` from [Releases](https://github.com/hooosberg/BeRaw/releases/latest), unzip to a stable folder (don't delete it after install), open `chrome://extensions`, enable **Developer mode**, click **Load unpacked**, pick the unzipped folder. *(Chrome Web Store listing in review.)*
+1. **Install** — Add BeRaw from the [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en). Developers can also download the latest `.zip` from [Releases](https://github.com/hooosberg/BeRaw/releases/latest), unzip it, and load it manually in `chrome://extensions`.
 2. **Open any Behance project** — The blue outlines appear on large images.
 3. **Pick + format** — Click **Select** on an image or **Select all** in the side panel. Choose **Original** / **Auto** / **JPG** / **PNG**.
 4. **Download** — Click **Download selected (ZIP)** for batch, or the per-image button for one file.
@@ -168,7 +168,7 @@ Bug reports, translation fixes, and new locales welcome. For translations, edit 
 ## Resources
 
 - **Website**: [hooosberg.github.io/BeRaw](https://hooosberg.github.io/BeRaw/)
-- **Download**: [Latest release](https://github.com/hooosberg/BeRaw/releases/latest)
+- **Download**: [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en)
 - **License (web-formatted)**: [hooosberg.github.io/BeRaw/license.html](https://hooosberg.github.io/BeRaw/license.html)
 - **Terms of Service**: [hooosberg.github.io/BeRaw/terms.html](https://hooosberg.github.io/BeRaw/terms.html)
 - **Privacy Policy**: [hooosberg.github.io/BeRaw/privacy.html](https://hooosberg.github.io/BeRaw/privacy.html)

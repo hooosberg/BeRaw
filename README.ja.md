@@ -6,7 +6,7 @@
 
 **Behance の原画像グラバー。あらゆる Behance プロジェクトからフルサイズのロー画像を、1 枚ずつでも一括 ZIP でも。**
 
-[公式サイト](https://hooosberg.github.io/BeRaw/) · [Chrome ウェブストア](https://chromewebstore.google.com/) · [不具合報告](https://github.com/hooosberg/BeRaw/issues)
+[公式サイト](https://hooosberg.github.io/BeRaw/) · [Chrome ウェブストア](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [不具合報告](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -46,7 +46,7 @@ git clone https://github.com/hooosberg/BeRaw.git
 
 ### Chrome ウェブストアから
 
-*現在審査中。*
+[Chrome ウェブストアでインストール](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en)。
 
 ## 使い方
 

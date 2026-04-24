@@ -6,7 +6,7 @@
 
 **Extractor de imágenes originales de Behance — saca los archivos crudos a tamaño completo de cualquier proyecto Behance, una a una o todo en un ZIP.**
 
-[Web](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/) · [Reportar problema](https://github.com/hooosberg/BeRaw/issues)
+[Web](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [Reportar problema](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -46,7 +46,7 @@ En `chrome://extensions/` activa el modo desarrollador, **Cargar descomprimida**
 
 ### Desde Chrome Web Store
 
-*En revisión.*
+[Instalar desde Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en).
 
 ## Uso
 

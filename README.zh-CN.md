@@ -6,7 +6,7 @@
 
 **Behance 原图抓取器 —— 从任意 Behance 项目里把未压缩的大图拿出来，单张或整包 ZIP。**
 
-[官网](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/) · [报告问题](https://github.com/hooosberg/BeRaw/issues)
+[官网](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [报告问题](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -46,7 +46,7 @@ git clone https://github.com/hooosberg/BeRaw.git
 
 ### 从 Chrome Web Store
 
-*上架审核中。*
+[在 Chrome Web Store 安装](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en)。
 
 ## 使用
 

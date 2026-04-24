@@ -6,7 +6,7 @@
 
 **Behance 원본 이미지 헌터. 어떤 Behance 프로젝트에서든 풀사이즈 원본을, 한 장씩 또는 ZIP으로 한꺼번에.**
 
-[웹사이트](https://hooosberg.github.io/BeRaw/) · [Chrome 웹 스토어](https://chromewebstore.google.com/) · [이슈 보고](https://github.com/hooosberg/BeRaw/issues)
+[웹사이트](https://hooosberg.github.io/BeRaw/) · [Chrome 웹 스토어](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [이슈 보고](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -46,7 +46,7 @@ git clone https://github.com/hooosberg/BeRaw.git
 
 ### Chrome 웹 스토어에서
 
-*심사 중입니다.*
+[Chrome 웹 스토어에서 설치](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en).
 
 ## 사용법
 

@@ -6,7 +6,7 @@
 
 **Capturador de imagens originais do Behance — tire os arquivos brutos em tamanho real de qualquer projeto Behance, um a um ou tudo num ZIP.**
 
-[Site](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/) · [Reportar problema](https://github.com/hooosberg/BeRaw/issues)
+[Site](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [Reportar problema](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -46,7 +46,7 @@ Em `chrome://extensions/` ative o modo de desenvolvedor, **Carregar sem compacta
 
 ### Pela Chrome Web Store
 
-*Em análise.*
+[Instalar pela Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en).
 
 ## Uso
 
