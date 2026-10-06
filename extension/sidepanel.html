@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BeRaw — Behance raw-image grabber</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <div class="app__brand">
+          <img class="app__logo" src="icons/icon-48.png" alt="BeRaw">
+          <div class="app__brand-text">
+            <h1 data-i18n="appName">BeRaw</h1>
+            <p class="eyebrow"><span data-i18n="appTagline">Behance raw-image grabber</span> · v 0.1.8</p>
+          </div>
+        </div>
+        <div class="app__actions">
+          <button id="refreshButton" class="icon-button" type="button" data-i18n-title="refresh" aria-label="Refresh">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 5V2L7 6l5 4V7a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7Zm-5 7H5a7 7 0 0 0 7 7v3l5-4-5-4v3a5 5 0 0 1-5-5Z"/></svg>
+          </button>
+          <button id="settingsButton" class="icon-button" type="button" data-i18n-title="settings" aria-label="Settings">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M19.4 13a7.5 7.5 0 0 0 0-2l2-1.6-2-3.5-2.4 1a7.4 7.4 0 0 0-1.7-1L15 3H9l-.3 2.9a7.4 7.4 0 0 0-1.7 1l-2.4-1-2 3.5L4.6 11a7.5 7.5 0 0 0 0 2l-2 1.6 2 3.5 2.4-1a7.4 7.4 0 0 0 1.7 1L9 21h6l.3-2.9a7.4 7.4 0 0 0 1.7-1l2.4 1 2-3.5L19.4 13ZM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5Z"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <section class="toolbar">
+        <div class="toolbar__primary">
+          <button id="downloadButton" class="button button--primary button--wide" type="button" data-i18n="downloadZip">Download selected (ZIP)</button>
+        </div>
+        <div class="toolbar__format">
+          <span class="format-label" data-i18n="outputFormat">Output format</span>
+          <div class="format-switch" role="radiogroup" aria-label="Output format">
+            <label class="format-option">
+              <input id="formatOriginal" type="radio" name="outputFormat" value="original" checked>
+              <span data-i18n="fmtOriginal">Original</span>
+            </label>
+            <label class="format-option">
+              <input id="formatAuto" type="radio" name="outputFormat" value="auto">
+              <span data-i18n="fmtAuto">Auto</span>
+            </label>
+            <label class="format-option">
+              <input id="formatJpg" type="radio" name="outputFormat" value="jpg">
+              <span>JPG</span>
+            </label>
+            <label class="format-option">
+              <input id="formatPng" type="radio" name="outputFormat" value="png">
+              <span>PNG</span>
+            </label>
+          </div>
+        </div>
+        <div class="toolbar__secondary">
+          <button id="selectAllButton" class="button button--ghost" type="button" data-i18n="selectAll">Select all</button>
+          <button id="clearSelectionButton" class="button button--ghost" type="button" data-i18n="clearSelection">Clear</button>
+          <span id="selectionCount" class="selection-count">0 / 0</span>
+        </div>
+      </section>
+
+      <section class="help-card" aria-labelledby="helpTitle">
+        <h2 id="helpTitle" class="help-card__title" data-i18n="helpTitle">How it works</h2>
+        <ul class="help-card__list">
+          <li data-i18n="helpTip1">Images with a blue outline are what BeRaw found; the basket count updates live.</li>
+          <li data-i18n="helpTip2">Hit "Select" on an image or "Select all" up top to add to the basket.</li>
+          <li data-i18n="helpTip3">Need just one? Click "Download image" right on the image overlay.</li>
+          <li data-i18n="helpTip4">"Download selected (ZIP)" bundles the whole basket in your chosen format.</li>
+        </ul>
+      </section>
+
+      <p id="statusMessage" class="status status--info" data-i18n="statusWaiting">Open a Behance page and BeRaw will scan it automatically.</p>
+
+      <section id="imageGrid" class="image-grid" aria-live="polite"></section>
+    </main>
+
+    <div id="settingsOverlay" class="overlay" hidden>
+      <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+        <header class="sheet__header">
+          <h2 id="sheetTitle" data-i18n="settings">Settings</h2>
+          <button id="settingsCloseButton" class="icon-button" type="button" aria-label="Close">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4 4.3 19.7 2.9 18.3 9.2 12 2.9 5.7 4.3 4.3l6.3 6.3 6.3-6.3Z"/></svg>
+          </button>
+        </header>
+        <nav class="sheet__tabs" role="tablist">
+          <button class="sheet__tab is-active" data-tab="help" type="button" role="tab" data-i18n="tabHelp">Help</button>
+          <button class="sheet__tab" data-tab="language" type="button" role="tab" data-i18n="tabLanguage">Language</button>
+          <button class="sheet__tab" data-tab="about" type="button" role="tab" data-i18n="tabAbout">About</button>
+        </nav>
+        <div class="sheet__body">
+          <section class="sheet__panel is-active" data-panel="help" role="tabpanel">
+            <h3 data-i18n="helpPanelIntro">Quick start</h3>
+            <ol class="sheet__steps">
+              <li data-i18n="helpStep1">Open any Behance project. BeRaw scans the page and outlines every big image in blue.</li>
+              <li data-i18n="helpStep2">Click "Select" on an image or "Select all" to add it to the basket. "Clear" wipes the basket.</li>
+              <li data-i18n="helpStep3">Just want one? Hit "Download image" on the image overlay.</li>
+              <li data-i18n="helpStep4">Done picking? Click the blue "Download selected (ZIP)" up top.</li>
+            </ol>
+            <h3 data-i18n="helpFormatTitle">Output formats</h3>
+            <ul class="sheet__kv">
+              <li><b data-i18n="fmtOriginal">Original</b> — <span data-i18n="helpFmtOriginal">No re-encoding. Pulls the largest size from Behance CDN.</span></li>
+              <li><b data-i18n="fmtAuto">Auto</b> — <span data-i18n="helpFmtAuto">WebP becomes JPG, everything else stays as-is.</span></li>
+              <li><b>JPG</b> — <span data-i18n="helpFmtJpg">Everything converted to JPG — handy for delivery.</span></li>
+              <li><b>PNG</b> — <span data-i18n="helpFmtPng">Everything converted to PNG — keeps transparency.</span></li>
+            </ul>
+          </section>
+
+          <section class="sheet__panel" data-panel="language" role="tabpanel">
+            <h3 data-i18n="languagePanelTitle">Interface language</h3>
+            <p class="sheet__muted" data-i18n="languagePanelHint">Pick a language; your choice is saved automatically.</p>
+            <div id="languageList" class="language-list"></div>
+          </section>
+
+          <section class="sheet__panel" data-panel="about" role="tabpanel">
+            <div class="about-hero">
+              <img class="about-hero__logo" src="icons/icon-128.png" alt="BeRaw">
+              <div>
+                <h3>BeRaw</h3>
+                <p class="sheet__muted" data-i18n="appTagline">Behance raw-image grabber</p>
+              </div>
+            </div>
+            <dl class="about-grid">
+              <dt data-i18n="aboutVersion">Version</dt>
+              <dd id="aboutVersionValue">v 0.1.8</dd>
+              <dt data-i18n="aboutAuthor">Author</dt>
+              <dd><a href="https://github.com/hooosberg" target="_blank" rel="noreferrer noopener">hooosberg</a></dd>
+              <dt data-i18n="aboutLicense">License</dt>
+              <dd><a href="https://hooosberg.github.io/BeRaw/license.html" target="_blank" rel="noreferrer noopener">BSL 1.1</a></dd>
+              <dt data-i18n="aboutContact">Contact</dt>
+              <dd><a href="mailto:zikedece@proton.me">zikedece@proton.me</a></dd>
+            </dl>
+
+            <div class="update-check">
+              <button id="checkUpdateButton" class="button button--ghost" type="button" data-i18n="aboutCheckUpdate">Check for updates</button>
+              <p id="updateStatus" class="sheet__muted update-check__status"></p>
+            </div>
+
+            <div class="about-links">
+              <a class="about-link" id="linkHome" href="https://hooosberg.github.io/BeRaw/" target="_blank" rel="noreferrer noopener">
+                <span data-i18n="aboutHome">Website</span>
+                <span class="about-link__arrow">↗</span>
+              </a>
+              <a class="about-link" id="linkGithub" href="https://github.com/hooosberg/BeRaw" target="_blank" rel="noreferrer noopener">
+                <span data-i18n="aboutGithub">GitHub repository</span>
+                <span class="about-link__arrow">↗</span>
+              </a>
+              <a class="about-link" id="linkReleases" href="https://github.com/hooosberg/BeRaw/releases" target="_blank" rel="noreferrer noopener">
+                <span data-i18n="aboutReleases">GitHub Releases</span>
+                <span class="about-link__arrow">↗</span>
+              </a>
+              <a class="about-link" id="linkTerms" href="https://hooosberg.github.io/BeRaw/terms.html" target="_blank" rel="noreferrer noopener">
+                <span data-i18n="aboutTerms">Terms of Service</span>
+                <span class="about-link__arrow">↗</span>
+              </a>
+              <a class="about-link" id="linkPrivacy" href="https://hooosberg.github.io/BeRaw/privacy.html" target="_blank" rel="noreferrer noopener">
+                <span data-i18n="aboutPrivacy">Privacy Policy</span>
+                <span class="about-link__arrow">↗</span>
+              </a>
+            </div>
+            <div class="friends-block">
+              <h4 class="friends-block__title" data-i18n="aboutFriendsTitle">Friends</h4>
+              <a class="about-link about-link--friend" href="https://artbuer.com" target="_blank" rel="noreferrer noopener">
+                <div class="about-link__stack">
+                  <span class="about-link__name" data-i18n="aboutFriend1Name">不二手造</span>
+                  <span class="about-link__sub" data-i18n="aboutFriend1Desc">Independent original design studio</span>
+                </div>
+                <span class="about-link__arrow">↗</span>
+              </a>
+            </div>
+
+            <p class="sheet__footnote" data-i18n="aboutFootnote">BeRaw is free for personal use under the BSL 1.1. Commercial use by organizations requires a separate license — contact zikedece@proton.me. BeRaw only downloads publicly accessible Behance images; please respect creator copyright.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <template id="imageCardTemplate">
+      <article class="card">
+        <label class="card__check">
+          <input class="card__checkbox" type="checkbox">
+          <span data-i18n="cardSelected">Selected</span>
+        </label>
+        <img class="card__image" alt="">
+        <div class="card__body">
+          <p class="card__title"></p>
+          <p class="card__meta"></p>
+          <a class="card__link" href="#" target="_blank" rel="noreferrer" data-i18n="cardOpen">Open original</a>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
