@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Website
+    url: https://hooosberg.com/apps/beraw/
+    about: Landing page, install instructions, and feature overview.
+  - name: Commercial license inquiry
+    url: https://github.com/hooosberg/BeRaw/blob/main/LICENSE
+    about: BeRaw is BUSL-1.1 — commercial use requires a separate license. See the license page for contact details.

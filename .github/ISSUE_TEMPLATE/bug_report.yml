@@ -1,0 +1,75 @@
+name: Bug report
+description: Something isn't working — an image won't download, the sidebar breaks, selection state goes wrong, etc.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please fill in as much as you can — screenshots and the Behance project URL help a lot.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what did you see instead?
+      placeholder: |
+        1. Opened https://www.behance.net/gallery/...
+        2. Clicked "Select all"
+        3. Hit "Download selected (ZIP)"
+        4. Expected 27 images, got a 4-image ZIP.
+    validations:
+      required: true
+
+  - type: input
+    id: behance-url
+    attributes:
+      label: Behance project URL (if relevant)
+      description: The page where the bug happened. Remove it if the bug isn't page-specific.
+      placeholder: https://www.behance.net/gallery/...
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: BeRaw version
+      description: Find it in Settings → About, or in chrome://extensions
+      placeholder: 0.1.8
+    validations:
+      required: true
+
+  - type: input
+    id: chrome-version
+    attributes:
+      label: Chrome version
+      description: chrome://version → first line
+      placeholder: "Chrome 131.0.6778.86"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - ChromeOS
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors (optional)
+      description: Right-click the side panel → Inspect → Console. Paste anything red.
+      render: shell
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / screen recording (optional)
+      description: Drag files in here. A 5-second clip of the broken flow beats a paragraph of description.

@@ -1,0 +1,48 @@
+name: Feature request
+description: Suggest a new capability, a UI change, or another site to support.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. One well-explained use case is more useful than a list of features — tell me what you're trying to do, not just what you want me to add.
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: What are you trying to do?
+      description: The problem in your words, not the solution.
+      placeholder: |
+        I collect mood boards from Behance and want every image tagged with the project title in the filename so I don't have to rename 200 files a week.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: What do you think would solve it?
+      description: Concrete, even if rough. A new button? A setting? A format option?
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you tried
+      description: Other extensions, manual workflows, anything that didn't quite work.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      description: Rough sense of where this fits
+      options:
+        - label: UI / UX change in the side panel
+        - label: New output format or naming rule
+        - label: Support for another design site (not Behance)
+        - label: New language
+        - label: Accessibility / keyboard
+        - label: Other

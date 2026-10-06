@@ -1,6 +1,6 @@
-# 冯雪专用 behance偷图神器 v 0.1.3
+# BeRaw - Behance 原图批量抓取工具 v0.1.3
 
-一个侧边栏版 Chrome 扩展，用来在当前打开的 Behance 页面中提取图片、预览图片链接，并批量下载选中的内容。
+一个轻量侧边栏版 Chrome 扩展，用来在当前打开的 Behance 页面中提取图片、预览图片链接，并批量下载高分辨率内容。
 
 ## 功能
 
@@ -18,8 +18,7 @@
 1. 打开 Chrome，进入 `chrome://extensions/`
 2. 打开右上角的“开发者模式”
 3. 点击“加载已解压的扩展程序”
-4. 选择当前文件夹：
-   `/Users/maohuhu/Desktop/临时/behance 抓图`
+4. 选择当前项目的 `extension` 文件夹
 
 ## 使用方法
 

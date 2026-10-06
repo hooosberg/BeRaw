@@ -6,7 +6,7 @@
 
 **Behance Roh-Bild-Grabber — zieh Originalbilder in voller Größe aus jedem Behance-Projekt, einzeln oder als ZIP.**
 
-[Website](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [Fehler melden](https://github.com/hooosberg/BeRaw/issues)
+[Website](https://hooosberg.com/apps/beraw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [Fehler melden](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -75,7 +75,7 @@ BeRaw steht unter der [Business Source License 1.1](LICENSE) — **privat kosten
 - **Kommerziell lizenzpflichtig**: Nutzung durch oder für eine Firma, ein Team, eine Behörde oder eine Organisation — interne Nutzung, Redistribution als Teil eines Produkts, Weiterverkauf, kommerzielle Dienste auf BeRaw-Basis — erfordert eine bezahlte Lizenz. Mail an <zikedece@proton.me>.
 - **Automatische Umstellung auf Apache 2.0 am 2030-04-22**: Vier Jahre nach Erstveröffentlichung wird der Change Date aktiv, BeRaw wird vollständig Open Source unter Apache 2.0, die kommerzielle Einschränkung fällt für alle Vorversionen weg.
 
-Volltext in [LICENSE](LICENSE), Web-Fassung auf [hooosberg.github.io/BeRaw/license.html](https://hooosberg.github.io/BeRaw/license.html). [Nutzungsbedingungen](https://hooosberg.github.io/BeRaw/terms.html) · [Datenschutzerklärung](https://hooosberg.github.io/BeRaw/privacy.html)
+Volltext in [LICENSE](LICENSE), Web-Fassung auf [github.com/hooosberg/BeRaw/blob/main/LICENSE](https://github.com/hooosberg/BeRaw/blob/main/LICENSE). [Nutzungsbedingungen](https://hooosberg.com/terms/) · [Datenschutzerklärung](https://hooosberg.com/privacy/)
 
 ## Kontakt
 

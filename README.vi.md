@@ -6,7 +6,7 @@
 
 **Trình lấy ảnh gốc Behance — kéo file nguyên bản, đầy đủ kích thước từ mọi dự án Behance, từng tấm hoặc gộp trong ZIP.**
 
-[Trang web](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [Báo lỗi](https://github.com/hooosberg/BeRaw/issues)
+[Trang web](https://hooosberg.com/apps/beraw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [Báo lỗi](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -75,7 +75,7 @@ BeRaw phát hành dưới [Business Source License 1.1](LICENSE) — **miễn ph
 - **Thương mại cần giấy phép**: sử dụng bởi công ty, nhóm, cơ quan hoặc bất kỳ tổ chức nào — dùng nội bộ, tái phân phối trong sản phẩm, bán lại, dịch vụ thương mại dựa trên BeRaw — đều cần giấy phép trả phí. Email <zikedece@proton.me>.
 - **Tự động chuyển sang Apache 2.0 vào 2030-04-22**: bốn năm sau lần phát hành đầu tiên, Change Date kích hoạt và BeRaw trở thành mã nguồn mở hoàn toàn theo Apache 2.0, gỡ bỏ hạn chế thương mại cho mọi phiên bản trước đó.
 
-Nội dung đầy đủ ở [LICENSE](LICENSE), bản web tại [hooosberg.github.io/BeRaw/license.html](https://hooosberg.github.io/BeRaw/license.html). [Điều khoản dịch vụ](https://hooosberg.github.io/BeRaw/terms.html) · [Chính sách bảo mật](https://hooosberg.github.io/BeRaw/privacy.html)
+Nội dung đầy đủ ở [LICENSE](LICENSE), bản web tại [github.com/hooosberg/BeRaw/blob/main/LICENSE](https://github.com/hooosberg/BeRaw/blob/main/LICENSE). [Điều khoản dịch vụ](https://hooosberg.com/terms/) · [Chính sách bảo mật](https://hooosberg.com/privacy/)
 
 ## Liên hệ
 

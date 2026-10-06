@@ -6,7 +6,7 @@
 
 **Behance 原圖抓取器——從任意 Behance 專案中取出未壓縮的大圖，單張或整包 ZIP。**
 
-[官網](https://hooosberg.github.io/BeRaw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [回報問題](https://github.com/hooosberg/BeRaw/issues)
+[官網](https://hooosberg.com/apps/beraw/) · [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [回報問題](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -75,7 +75,7 @@ BeRaw 採 [Business Source License 1.1](LICENSE)——**個人免費，商用付
 - **商用需授權**：公司、團隊、政府機構、任何組織的使用——包含內部使用、作為產品再散佈、轉售、以 BeRaw 為基礎提供商業服務——需要單獨付費授權。信件 <zikedece@proton.me>。
 - **2030-04-22 自動轉 Apache 2.0**：首次發布四年後 Change Date 觸發，BeRaw 全面開源為 Apache 2.0，所有先前版本的商業限制一併解除。
 
-完整文字見 [LICENSE](LICENSE)，網頁版見 [hooosberg.github.io/BeRaw/license.html](https://hooosberg.github.io/BeRaw/license.html)。[服務條款](https://hooosberg.github.io/BeRaw/terms.html) · [隱私權政策](https://hooosberg.github.io/BeRaw/privacy.html)
+完整文字見 [LICENSE](LICENSE)，網頁版見 [github.com/hooosberg/BeRaw/blob/main/LICENSE](https://github.com/hooosberg/BeRaw/blob/main/LICENSE)。[服務條款](https://hooosberg.com/terms/) · [隱私權政策](https://hooosberg.com/privacy/)
 
 ## 聯絡
 

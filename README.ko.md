@@ -6,7 +6,7 @@
 
 **Behance 원본 이미지 헌터. 어떤 Behance 프로젝트에서든 풀사이즈 원본을, 한 장씩 또는 ZIP으로 한꺼번에.**
 
-[웹사이트](https://hooosberg.github.io/BeRaw/) · [Chrome 웹 스토어](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [이슈 보고](https://github.com/hooosberg/BeRaw/issues)
+[웹사이트](https://hooosberg.com/apps/beraw/) · [Chrome 웹 스토어](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [이슈 보고](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -75,7 +75,7 @@ BeRaw는 [Business Source License 1.1](LICENSE)로 배포됩니다 — **개인�
 - **상업적 사용은 별도 라이선스**: 회사, 팀, 정부 기관, 어떤 조직의 사용이든 — 내부 사용, 제품의 일부로 재배포, 재판매, BeRaw 기반 상업 서비스 — 별도의 유료 라이선스가 필요합니다. <zikedece@proton.me>.
 - **2030-04-22 Apache 2.0으로 자동 전환**: 최초 배포 4년 후 Change Date가 발동되어 BeRaw는 Apache 2.0 오픈소스가 되며, 이전 모든 버전의 상업적 제한이 해제됩니다.
 
-전체 텍스트는 [LICENSE](LICENSE), 웹 버전은 [hooosberg.github.io/BeRaw/license.html](https://hooosberg.github.io/BeRaw/license.html). [서비스 약관](https://hooosberg.github.io/BeRaw/terms.html) · [개인정보 처리방침](https://hooosberg.github.io/BeRaw/privacy.html)
+전체 텍스트는 [LICENSE](LICENSE), 웹 버전은 [github.com/hooosberg/BeRaw/blob/main/LICENSE](https://github.com/hooosberg/BeRaw/blob/main/LICENSE). [서비스 약관](https://hooosberg.com/terms/) · [개인정보 처리방침](https://hooosberg.com/privacy/)
 
 ## 연락처
 

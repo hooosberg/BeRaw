@@ -13,8 +13,8 @@
   <a href="https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en">
     <img src="https://img.shields.io/badge/Install-Chrome_Web_Store-1a73e8?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Install from Chrome Web Store">
   </a>
-  <a href="https://hooosberg.github.io/BeRaw/">
-    <img src="https://img.shields.io/badge/Website-hooosberg.github.io/BeRaw-F5A623?style=for-the-badge" alt="Website">
+  <a href="https://hooosberg.com/apps/beraw/">
+    <img src="https://img.shields.io/badge/Website-hooosberg.com/apps/beraw/-F5A623?style=for-the-badge" alt="Website">
   </a>
   <a href="https://github.com/hooosberg/BeRaw">
     <img src="https://img.shields.io/github/stars/hooosberg/BeRaw?style=for-the-badge&logo=github&label=Star&color=24292f" alt="Star on GitHub">
@@ -167,11 +167,11 @@ Bug reports, translation fixes, and new locales welcome. For translations, edit 
 
 ## Resources
 
-- **Website**: [hooosberg.github.io/BeRaw](https://hooosberg.github.io/BeRaw/)
+- **Website**: [hooosberg.com/apps/beraw/](https://hooosberg.com/apps/beraw/)
 - **Download**: [Chrome Web Store](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en)
-- **License (web-formatted)**: [hooosberg.github.io/BeRaw/license.html](https://hooosberg.github.io/BeRaw/license.html)
-- **Terms of Service**: [hooosberg.github.io/BeRaw/terms.html](https://hooosberg.github.io/BeRaw/terms.html)
-- **Privacy Policy**: [hooosberg.github.io/BeRaw/privacy.html](https://hooosberg.github.io/BeRaw/privacy.html)
+- **License (web-formatted)**: [github.com/hooosberg/BeRaw/blob/main/LICENSE](https://github.com/hooosberg/BeRaw/blob/main/LICENSE)
+- **Terms of Service**: [hooosberg.com/terms/](https://hooosberg.com/terms/)
+- **Privacy Policy**: [hooosberg.com/privacy/](https://hooosberg.com/privacy/)
 
 ## Contact
 
@@ -187,11 +187,11 @@ BeRaw only downloads publicly accessible Behance images. Works on Behance are th
 Built by [hooosberg](https://github.com/hooosberg):
 
 - [AgentLimb](https://agentlimb.com) — teach AI to control your browser
-- [Packpour](https://hooosberg.github.io/Packpour/) — App Store Connect locale filler
-- [WitNote](https://hooosberg.github.io/WitNote/) — local-first AI writing companion
-- [GlotShot](https://hooosberg.github.io/GlotShot/) — perfect App Store preview images
-- [TrekReel](https://hooosberg.github.io/TrekReel/) — outdoor trails, cinematic reels
-- [DOMPrompter](https://hooosberg.github.io/DOMPrompter/) — visualize DOM for AI code
+- [Packpour](https://hooosberg.com/apps/packpour/) — App Store Connect locale filler
+- [WitNote](https://hooosberg.com/apps/witnote/) — local-first AI writing companion
+- [GlotShot](https://hooosberg.com/apps/glotshot/) — perfect App Store preview images
+- [TrekReel](https://hooosberg.com/apps/trekreel/) — outdoor trails, cinematic reels
+- [DOMPrompter](https://hooosberg.com/apps/domprompter/) — visualize DOM for AI code
 - [UIXskills](https://uixskills.com) — AI → JSON → Whiteboard → UI
 
 ## Friends

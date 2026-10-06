@@ -6,7 +6,7 @@
 
 **Behance の原画像グラバー。あらゆる Behance プロジェクトからフルサイズのロー画像を、1 枚ずつでも一括 ZIP でも。**
 
-[公式サイト](https://hooosberg.github.io/BeRaw/) · [Chrome ウェブストア](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [不具合報告](https://github.com/hooosberg/BeRaw/issues)
+[公式サイト](https://hooosberg.com/apps/beraw/) · [Chrome ウェブストア](https://chromewebstore.google.com/detail/beraw-%E2%80%94-behance-raw-image/ghhedamclfpgcnpfclmefepnacnkngio?authuser=0&hl=en) · [不具合報告](https://github.com/hooosberg/BeRaw/issues)
 
 </div>
 
@@ -75,7 +75,7 @@ BeRaw は [Business Source License 1.1](LICENSE) で配布されます — **個
 - **商用はライセンス必須**：会社、チーム、政府機関、組織による利用 — 社内利用、製品への再配布、再販、BeRaw を基盤とした商用サービスの提供 — には別途有料ライセンスが必要です。<zikedece@proton.me>。
 - **2030-04-22 に Apache 2.0 へ自動変換**：初回公開から 4 年後の Change Date で BeRaw は完全に Apache 2.0 のオープンソースとなり、それまでの全バージョンの商用制限が解除されます。
 
-完全な文言は [LICENSE](LICENSE)、Web 版は [hooosberg.github.io/BeRaw/license.html](https://hooosberg.github.io/BeRaw/license.html)。[利用規約](https://hooosberg.github.io/BeRaw/terms.html) · [プライバシーポリシー](https://hooosberg.github.io/BeRaw/privacy.html)
+完全な文言は [LICENSE](LICENSE)、Web 版は [github.com/hooosberg/BeRaw/blob/main/LICENSE](https://github.com/hooosberg/BeRaw/blob/main/LICENSE)。[利用規約](https://hooosberg.com/terms/) · [プライバシーポリシー](https://hooosberg.com/privacy/)
 
 ## 連絡先
 
